@@ -1,9 +1,21 @@
 x = 50
 
-def foo():  
-    print('x is',x)
+def foo(x):
+    # x is now local
+    print('local x is',x)
     x = 2
-    print('global x is now',x)
+    print('local x is now',x)
 
-foo()
-print('value of x is',x)
+foo(x)
+
+print('\n')
+
+def bar():
+    global x
+    # x is now local
+    print('local x is the same as global at',x)
+    x = 2
+    print('local and global x is now',x)
+
+bar()
+print('global value of x is',x)

@@ -1,5 +1,5 @@
-def foo(param1, param2 = '2 not assigned', param3 = '3 not assigned'):
-    print(param1,'\n',param2,'\n',param3)
+def foo(param1, param2 = '2not', param3 = '3not'):
+    print(param1,param2,param3)
 
 foo('alpha','bleh','cool')
 
